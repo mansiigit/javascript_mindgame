@@ -1,0 +1,80 @@
+*{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+}
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem; /* Decrease the gap between elements */
+        max-height: 100vh; /* Set the maximum height of the body */
+        overflow: auto; /* Add scroll bar if content overflows */
+        background-color: #886F68;
+        margin-top: 2rem; /* Remove space at the top */
+    }
+    
+   
+    
+   #sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 2rem; /* Adjust the gap between cards */
+    max-width: 80rem; /* Limit the maximum width of the container */
+}
+    
+    
+    
+h1{
+color: rgb(249, 249, 234);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+span{
+        color: rgb(236, 232, 131);
+}
+.card{
+    position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+    
+}
+.card,.back-card,.front-card{
+    height: 6rem;
+    width:6rem;
+}
+
+.back-card,.front-card{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front-card{
+    background-color: #3f3532;
+    background-size: contain;
+    border-radius: .6rem;
+    box-shadow: purple;
+    padding: 2rem;
+}
+.back-card{
+    transform: rotateY(180deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: green;
+    
+    
+}
+.card_selected{
+    transform: rotateY(180deg);
+}
+.card_match .front-card{
+    background-color: purple;
+}
+
+
+      
+            
+            
+            
